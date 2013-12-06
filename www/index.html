@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div data-comment="general">
+    <button id="clearLog">Clear log</button>
+  </div>
+  
+  <hr/>
+  
+  <div data-comment="PouchDB">
+    <button id="clearDb">Clear db</button>
+    <button id="bulkAdd">Bulk add to PouchDB</button>
+    <button id="allDocs">Get all docs</button>
+    <button id="get">Get document</button>
+    <button id="query">Query single user</button>
+  </div>
+  
+  <hr/>
+  
+  <div data-comment="Couchbase Lite">
+    <button id="cb-clearDb">Clear db</button>
+    <button id="cb-bulkAdd">Bulk add to Couchbase Lite</button>
+    <button id="cb-allDocs">Get all docs</button>
+    <button id="cb-get">Get document</button>
+    <button id="cb-query">Query single user</button>
+  </div>
+    
+  <hr/>
+
+  <div id="log"></div>
+
+  <script src="cordova.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="pouchdb.js"></script>
+  <script src="faker.js"></script>
+  <script src="general-handler.js"></script>
+  <script src="pouchdb-handler.js"></script>
+  <script src="couchbase-handler.js"></script>
+</body>
+</html>
